@@ -50,7 +50,7 @@ jobs:
         ################################################################################################
         sed -i '/CONFIG_FIRMWARE_INCLUDE_TRANSMISSION/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE/d' .config
-        sed -i '/CONFIG_FIRMWARE_INCLUDE_NFSD/d' .config
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_NFS/d' .config
         #sed -i '/CONFIG_FIRMWARE_INCLUDE_MINIDLNA/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_MENTOHUST/d' .config #删除配置项MENTOHUST
         sed -i '/CONFIG_FIRMWARE_INCLUDE_SCUTCLIENT/d' .config #删除配置项SCUTCLIENT
@@ -71,6 +71,7 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION=y" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=y" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_NFSD=n" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_NFSC=n" >> .config
         #echo "CONFIG_FIRMWARE_INCLUDE_MINIDLNA=y" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION_WEB_CONTROL=y" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_MENTOHUST=n" >> .config #MENTOHUST
